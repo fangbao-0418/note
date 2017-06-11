@@ -7,6 +7,7 @@
 #mv ifcfg-eno16777736 ifcfg-eth0
 #vi ifcfg-eth0
 ```
+<code>
 将NAME/DEVICE修改为eth0
 #vi /etc/default/grub
 在变量GRUBCMDLINELINUX中加入net.ifnames=0 biosdevname=0
@@ -14,6 +15,7 @@
 #vi /etc/udev/rules.d/70-persistent-net.rules
 SUBSYSTEM==”net”,ACTION==”add”,DRIVERS==”?“,ATTR{address}==”您的网卡MAC地址”,ATTR｛type｝==”1” ,KERNEL==”eth“,NAME=”eth0”
 #reboot
+</code>
 ## 二：安装必要工具
 ```
 #yum install epel-release
