@@ -1,4 +1,4 @@
-<h1 class="text-align-center" style="text-align: center">centos7没有安装ifconfig命令的解决方法</h1>
+<h1><center>centos7没有安装ifconfig命令的解决方法<center></h1>
 
 ```
 yum install net-tools.x86_64
