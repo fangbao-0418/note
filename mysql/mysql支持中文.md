@@ -11,6 +11,7 @@ create table entries2 (
 
 ### 2，修改已经有的table的编码
 <p>当使用默认编码创建了一个table的时候，是不能支持中文的，这时候使用如下语句对table_name进行修改：</p>
+
 ```sql
 alter table table_name convert to character set utf8;
 ```
